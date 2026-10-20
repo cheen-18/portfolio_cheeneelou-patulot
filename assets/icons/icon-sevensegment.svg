@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="100%" height="100%">
+  <defs>
+    <filter id="segGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="segGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ede9fe"/>
+      <stop offset="50%" stop-color="#c4b5fd"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+
+  <g stroke="url(#segGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#segGlow)">
+    <!-- 7-Segment Display Module Bezel -->
+    <rect x="12" y="8" width="40" height="48" rx="6" stroke-width="2.2" fill="#c4b5fd" fill-opacity="0.1"/>
+
+    <!-- Integrated DIP Pins at Bottom -->
+    <line x1="20" y1="56" x2="20" y2="60" stroke-width="2"/>
+    <line x1="28" y1="56" x2="28" y2="60" stroke-width="2"/>
+    <line x1="36" y1="56" x2="36" y2="60" stroke-width="2"/>
+    <line x1="44" y1="56" x2="44" y2="60" stroke-width="2"/>
+
+    <!-- 7 Individual LED Segments Forming Clean Digit '8' with Italic Tilt -->
+    <g transform="translate(18, 14) skewX(-4)" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round">
+      <!-- Top (a) -->
+      <line x1="4" y1="2" x2="20" y2="2"/>
+      <!-- Top-Left (f) -->
+      <line x1="3" y1="4" x2="3" y2="16"/>
+      <!-- Top-Right (b) -->
+      <line x1="21" y1="4" x2="21" y2="16"/>
+      <!-- Middle (g) -->
+      <line x1="4" y1="18" x2="20" y2="18"/>
+      <!-- Bottom-Left (e) -->
+      <line x1="3" y1="20" x2="3" y2="32"/>
+      <!-- Bottom-Right (c) -->
+      <line x1="21" y1="20" x2="21" y2="32"/>
+      <!-- Bottom (d) -->
+      <line x1="4" y1="34" x2="20" y2="34"/>
+    </g>
+
+    <!-- Decimal Point (DP) LED Node -->
+    <circle cx="44" cy="48" r="2.5" fill="#fef08a" stroke="#ffffff" stroke-width="1.2"/>
+
+    <!-- Binary Decoded Bus Input Indicators -->
+    <circle cx="16" cy="12" r="1.2" fill="#c4b5fd" stroke="none"/>
+    <circle cx="48" cy="12" r="1.2" fill="#c4b5fd" stroke="none"/>
+  </g>
+</svg>

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheeneelou Nicolas Patulot | Anti-Gravity Elf Portfolio</title>
+  <meta name="description" content="Portfolio of Cheeneelou Nicolas Patulot - 4th Year Computer Engineering Student & Receipt Encoder. Anti-Gravity Elf Aesthetic inspired by Frieren.">
+  <link rel="icon" type="image/svg+xml" href="assets/tennis-ball.svg">
+
+  <!-- Google Fonts: Cinzel for Ethereal Elven Magic, Plus Jakarta Sans & Outfit for Technical Precision -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Interactive Anti-Gravity Canvas (Aura rings, levitating shuttlecocks & glowing green tennis balls) -->
+  <canvas id="antiGravityCanvas" class="anti-gravity-canvas"></canvas>
+
+  <!-- Ambient Ethereal Glow Gradients -->
+  <div class="ambient-glow glow-top"></div>
+  <div class="ambient-glow glow-middle"></div>
+  <div class="ambient-glow glow-bottom"></div>
+
+  <!-- FLOATING FROSTED-GLASS PILL NAVIGATION BAR -->
+  <header class="navbar-wrapper">
+    <nav class="pill-navbar" id="navbar" aria-label="Main Navigation">
+      <a href="#home" class="nav-brand">
+        <span class="brand-rune">✦</span>
+        <span class="brand-text">C.N.P.</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">✦ Home</a>
+        <a href="#projects" class="nav-link">✦ Projects</a>
+        <a href="#skills" class="nav-link">✦ Skills</a>
+        <a href="#experience" class="nav-link">✦ Experience</a>
+        <a href="#contact" class="nav-link">✦ Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Audio Chime Toggle -->
+        <button id="soundToggle" class="nav-icon-btn" title="Toggle Magical Chimes" aria-label="Toggle Sound">
+          <span class="btn-icon">🔔</span>
+        </button>
+        <!-- Zero-G Pulse Button -->
+        <button id="gravityPulseBtn" class="pill-btn-small" title="Trigger Zero-Gravity Mana Pulse">
+          <span class="pulse-spark">✨</span> Zero-G
+        </button>
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main class="main-container">
+
+    <!-- 🪶 HERO / ABOUT ME SECTION -->
+    <section id="home" class="section hero-section">
+      <div class="floating-card hero-card" data-tilt>
+        <!-- Card Halo & Ornate Elven Corner Accents -->
+        <div class="card-halo"></div>
+        <span class="corner-rune top-left">✦</span>
+        <span class="corner-rune top-right">✦</span>
+        <span class="corner-rune bottom-left">✦</span>
+        <span class="corner-rune bottom-right">✦</span>
+
+        <div class="hero-layout-updated">
+          <!-- LEFT SIDE: Real Photo [image_55013a.jpg] Framed in Soft Glowing Border (Main Profile Picture) -->
+          <div class="hero-profile-area">
+            <div class="real-photo-frame" title="Cheeneelou Nicolas Patulot - Main Profile Picture">
+              <!-- Soft Glowing Halo Rings -->
+              <div class="photo-glow-aura"></div>
+              <div class="photo-border-ring"></div>
+
+              <!-- Main Profile Photo image_55013a.jpg -->
+              <div class="photo-img-container">
+                <img src="assets/image_55013a.jpg" 
+                     onerror="this.onerror=null; this.src='image_55013a.jpg';"
+                     alt="Cheeneelou Nicolas Patulot - Real Profile Photo" 
+                     class="real-profile-img">
+              </div>
+
+              <!-- Subtle Corner Rune Accents -->
+              <span class="photo-rune tl">✦</span>
+              <span class="photo-rune tr">✦</span>
+              <span class="photo-rune bl">✦</span>
+              <span class="photo-rune br">✦</span>
+
+              <div class="photo-caption-badge">
+                <span class="caption-dot"></span> Cheeneelou Nicolas Patulot
+              </div>
+            </div>
+          </div>
+
+          <!-- CENTER AREA: Content, Biography & CTAs -->
+          <div class="hero-text-area">
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              <span>Computer Engineering & Data Specialist</span>
+            </div>
+
+            <h1 class="hero-title">
+              Cheeneelou Nicolas Patulot
+            </h1>
+
+            <div class="hero-role-tags">
+              <span class="role-tag primary-role">
+                <span class="tag-rune">✦</span> 4th Year Bachelor of Science in Computer Engineering
+              </span>
+              <span class="role-tag secondary-role">
+                <span class="tag-rune">🏢</span> Receipt Encoder at JEG VENTURES CORPORATION
+              </span>
+            </div>
+
+            <p class="hero-bio">
+              "I am a Computer Engineering student blending technical precision with creative problem-solving. Whether I am encoding data, designing circuits, or developing web applications, I approach every task with the focus of a perfectly timed tennis serve and the agility of a badminton rally."
+            </p>
+
+            <div class="hero-badges-row">
+              <div class="stat-pill">
+                <span class="stat-icon">⚡</span>
+                <span class="stat-text">Circuitry & Microcontrollers</span>
+              </div>
+              <div class="stat-pill">
+                <span class="stat-icon">📊</span>
+                <span class="stat-text">Precision Excel Encoder</span>
+              </div>
+              <div class="stat-pill">
+                <span class="stat-icon">🏸</span>
+                <span class="stat-text">Badminton & Tennis Agility</span>
+              </div>
+            </div>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="pill-btn pill-btn-primary">
+                <span class="btn-glow"></span>
+                <span>🎾 Explore Projects</span>
+              </a>
+              <a href="#contact" class="pill-btn pill-btn-secondary">
+                <span>💌 Summon Contact</span>
+              </a>
+              <button class="pill-btn pill-btn-ghost copy-email-btn" data-email="patulotcheneelou@gmail.com">
+                <span>📋 Copy Email</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🎾 PROJECTS SECTION -->
+    <section id="projects" class="section projects-section">
+      <div class="section-header">
+        <div class="section-badge">
+          <span class="badge-rune">✦</span> SPELLCRAFT & ENGINEERING <span class="badge-rune">✦</span>
+        </div>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">
+          Hover over each anti-gravity card to levitate its schematics and explore the engineered magic.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Power Supply -->
+        <article class="project-card anti-gravity-card" data-tilt data-project="powersupply">
+          <div class="card-glow-layer"></div>
+          <div class="project-card-header">
+            <div class="project-icon-box">
+              <div class="icon-aura-halo"></div>
+              <img src="assets/icons/icon-powersupply.svg" alt="Power Supply Circuit Icon" class="project-svg-icon">
+            </div>
+            <span class="project-category">Hardware & Power</span>
+          </div>
+          <h3 class="project-title">Power Supply</h3>
+          <p class="project-desc">
+            Designed and implemented a reliable power supply circuit.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">Circuit Design</span>
+            <span class="ptag">Voltage Regulation</span>
+            <span class="ptag">Hardware Testing</span>
+          </div>
+          <div class="project-card-footer">
+            <button class="inspect-btn" onclick="openProjectModal('powersupply')">
+              <span>Inspect Circuit</span> <span class="btn-arrow">→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 2: ANTENNA -->
+        <article class="project-card anti-gravity-card" data-tilt data-project="antenna">
+          <div class="card-glow-layer"></div>
+          <div class="project-card-header">
+            <div class="project-icon-box">
+              <div class="icon-aura-halo"></div>
+              <img src="assets/icons/icon-antenna.svg" alt="ANTENNA RF Icon" class="project-svg-icon">
+            </div>
+            <span class="project-category">RF & Telecommunications</span>
+          </div>
+          <h3 class="project-title">ANTENNA</h3>
+          <p class="project-desc">
+            Developed and tested antenna configurations for optimized signal reception.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">RF Engineering</span>
+            <span class="ptag">Signal Optimization</span>
+            <span class="ptag">Impedance Tuning</span>
+          </div>
+          <div class="project-card-footer">
+            <button class="inspect-btn" onclick="openProjectModal('antenna')">
+              <span>Inspect RF Config</span> <span class="btn-arrow">→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 3: SPO2 -->
+        <article class="project-card anti-gravity-card" data-tilt data-project="spo2">
+          <div class="card-glow-layer"></div>
+          <div class="project-card-header">
+            <div class="project-icon-box">
+              <div class="icon-aura-halo"></div>
+              <img src="assets/icons/icon-spo2.svg" alt="SPO2 Biomedical Pulse Icon" class="project-svg-icon">
+            </div>
+            <span class="project-category">Biomedical Engineering</span>
+          </div>
+          <h3 class="project-title">SPO2</h3>
+          <p class="project-desc">
+            Engineered an SPO2 monitoring device for accurate oxygen saturation readings.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">Pulse Oximetry</span>
+            <span class="ptag">Sensor Interfacing</span>
+            <span class="ptag">Biomedical Microcontroller</span>
+          </div>
+          <div class="project-card-footer">
+            <button class="inspect-btn" onclick="openProjectModal('spo2')">
+              <span>Inspect Device</span> <span class="btn-arrow">→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 4: 3 BALL SPIROMETER -->
+        <article class="project-card anti-gravity-card" data-tilt data-project="spirometer">
+          <div class="card-glow-layer"></div>
+          <div class="project-card-header">
+            <div class="project-icon-box">
+              <div class="icon-aura-halo"></div>
+              <img src="assets/icons/icon-spirometer.svg" alt="3 Ball Spirometer Lung Icon" class="project-svg-icon">
+            </div>
+            <span class="project-category">Medical Instrumentation</span>
+          </div>
+          <h3 class="project-title">3 BALL SPIROMETER</h3>
+          <p class="project-desc">
+            Created a digital/hardware interface for a 3-ball spirometer respiratory tool.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">Respiratory Tech</span>
+            <span class="ptag">Hardware Interface</span>
+            <span class="ptag">Levitation Sensor</span>
+          </div>
+          <div class="project-card-footer">
+            <button class="inspect-btn" onclick="openProjectModal('spirometer')">
+              <span>Inspect Interface</span> <span class="btn-arrow">→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 5: SHIPSMART WEB-APP -->
+        <article class="project-card anti-gravity-card" data-tilt data-project="shipsmart">
+          <div class="card-glow-layer"></div>
+          <div class="project-card-header">
+            <div class="project-icon-box">
+              <div class="icon-aura-halo"></div>
+              <img src="assets/icons/icon-shipsmart.svg" alt="ShipSmart Web-App Logistics Icon" class="project-svg-icon">
+            </div>
+            <span class="project-category">Full-Stack Web Dev</span>
+          </div>
+          <h3 class="project-title">SHIPSMART WEB-APP</h3>
+          <p class="project-desc">
+            Developed a seamless, user-friendly web application for smart shipping solutions.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">Web Application</span>
+            <span class="ptag">Smart Logistics</span>
+            <span class="ptag">UI/UX Design</span>
+          </div>
+          <div class="project-card-footer">
+            <button class="inspect-btn" onclick="openProjectModal('shipsmart')">
+              <span>Inspect Web-App</span> <span class="btn-arrow">→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Project 6: SEVEN SEGMENT -->
+        <article class="project-card anti-gravity-card" data-tilt data-project="sevensegment">
+          <div class="card-glow-layer"></div>
+          <div class="project-card-header">
+            <div class="project-icon-box">
+              <div class="icon-aura-halo"></div>
+              <img src="assets/icons/icon-sevensegment.svg" alt="Seven Segment LED Display Icon" class="project-svg-icon">
+            </div>
+            <span class="project-category">Digital Logic & Displays</span>
+          </div>
+          <h3 class="project-title">SEVEN SEGMENT</h3>
+          <p class="project-desc">
+            Programmed and wired seven-segment display modules for hardware readouts.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">Digital Logic</span>
+            <span class="ptag">Multiplexed Displays</span>
+            <span class="ptag">Embedded C</span>
+          </div>
+          <div class="project-card-footer">
+            <button class="inspect-btn" onclick="openProjectModal('sevensegment')">
+              <span>Inspect Module</span> <span class="btn-arrow">→</span>
+            </button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 🏸 SKILLS SECTION -->
+    <section id="skills" class="section skills-section">
+      <div class="section-header">
+        <div class="section-badge">
+          <span class="badge-rune">✦</span> ELVEN GRIMOIRES OF MASTERY <span class="badge-rune">✦</span>
+        </div>
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">
+          Hovering ancient grimoires and glowing racquets imbued with engineering precision.
+        </p>
+      </div>
+
+      <div class="skills-list">
+
+        <!-- Skill 1: Hardware & Electronics -->
+        <div class="skill-row-card floating-card" data-tilt>
+          <div class="skill-card-visual">
+            <div class="grimoire-icon-container">
+              <div class="skill-aura-halo"></div>
+              <img src="assets/icons/icon-hardware.svg" alt="Hardware & Electronics Circuit Icon" class="skill-svg-icon">
+            </div>
+          </div>
+          <div class="skill-card-info">
+            <div class="skill-card-top">
+              <h3 class="skill-domain-title">Hardware & Electronics</h3>
+              <span class="mana-level">Mana Affinity: 95%</span>
+            </div>
+            <p class="skill-domain-desc">
+              <strong>Basic Electronics, Microcontroller Programming, and Circuit Design.</strong>
+            </p>
+            <div class="skill-tags-cloud">
+              <span class="skill-pill">Circuit Prototyping</span>
+              <span class="skill-pill">Microcontroller I/O</span>
+              <span class="skill-pill">Breadboarding & Soldering</span>
+              <span class="skill-pill">Diagnostic Multimeter</span>
+              <span class="skill-pill">Component Analysis</span>
+            </div>
+            <div class="mana-progress-bar">
+              <div class="mana-fill" style="width: 95%;">
+                <span class="mana-sparkle"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 2: Drafting & Design -->
+        <div class="skill-row-card floating-card" data-tilt>
+          <div class="skill-card-visual">
+            <div class="grimoire-icon-container">
+              <div class="skill-aura-halo"></div>
+              <img src="assets/icons/icon-autocad.svg" alt="2D AutoCAD Drafting Icon" class="skill-svg-icon">
+            </div>
+          </div>
+          <div class="skill-card-info">
+            <div class="skill-card-top">
+              <h3 class="skill-domain-title">Drafting & Design</h3>
+              <span class="mana-level">Mana Affinity: 88%</span>
+            </div>
+            <p class="skill-domain-desc">
+              <strong>Basic 2D AutoCAD.</strong>
+            </p>
+            <div class="skill-tags-cloud">
+              <span class="skill-pill">2D AutoCAD</span>
+              <span class="skill-pill">Engineering Schematics</span>
+              <span class="skill-pill">Dimensional Layouts</span>
+              <span class="skill-pill">Blueprint Interpretation</span>
+            </div>
+            <div class="mana-progress-bar">
+              <div class="mana-fill" style="width: 88%;">
+                <span class="mana-sparkle"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 3: Administrative & Data -->
+        <div class="skill-row-card floating-card" data-tilt>
+          <div class="skill-card-visual">
+            <div class="grimoire-icon-container">
+              <div class="skill-aura-halo"></div>
+              <img src="assets/icons/icon-excel.svg" alt="Excel & Data Encoding Icon" class="skill-svg-icon">
+            </div>
+          </div>
+          <div class="skill-card-info">
+            <div class="skill-card-top">
+              <h3 class="skill-domain-title">Administrative & Data</h3>
+              <span class="mana-level">Mana Affinity: 98%</span>
+            </div>
+            <p class="skill-domain-desc">
+              <strong>Microsoft Office (Specialized Excel Encoder).</strong>
+            </p>
+            <div class="skill-tags-cloud">
+              <span class="skill-pill">Specialized Excel Encoder</span>
+              <span class="skill-pill">Receipt Auditing</span>
+              <span class="skill-pill">High-Speed Data Entry</span>
+              <span class="skill-pill">Formulas & Validation</span>
+              <span class="skill-pill">Microsoft Word & PowerPoint</span>
+            </div>
+            <div class="mana-progress-bar">
+              <div class="mana-fill" style="width: 98%;">
+                <span class="mana-sparkle"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ⏳ EXPERIENCE SECTION -->
+    <section id="experience" class="section experience-section">
+      <div class="section-header">
+        <div class="section-badge">
+          <span class="badge-rune">✦</span> CHRONICLES & TIMELINE <span class="badge-rune">✦</span>
+        </div>
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">
+          A vertical timeline bound together by a thin, glowing purple magical thread.
+        </p>
+      </div>
+
+      <div class="magical-timeline-container">
+        <!-- Thin glowing purple magical thread (SVG line with glowing pulse) -->
+        <div class="magical-thread-line">
+          <div class="thread-beam"></div>
+        </div>
+
+        <!-- Timeline Item 1: JEG VENTURES CORPORATION -->
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-node">
+            <div class="node-ring"></div>
+            <div class="node-core">✦</div>
+          </div>
+          <div class="timeline-card floating-card" data-tilt>
+            <div class="timeline-meta">
+              <span class="timeline-badge current">Current Professional Role</span>
+              <span class="timeline-period">Professional Engagement</span>
+            </div>
+            <h3 class="timeline-role">Receipt Encoder</h3>
+            <h4 class="timeline-company">JEG VENTURES CORPORATION</h4>
+            <p class="timeline-desc">
+              Applying Computer Engineering accuracy and meticulous attention to detail in high-volume receipt encoding, financial documentation, data verification, and digital record integrity.
+            </p>
+            <div class="timeline-skills">
+              <span class="t-tag">Specialized Excel Encoding</span>
+              <span class="t-tag">Financial Data Accuracy</span>
+              <span class="t-tag">Systematic Auditing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2: Circuit Sprint -->
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-node">
+            <div class="node-ring"></div>
+            <div class="node-core">⚡</div>
+          </div>
+          <div class="timeline-card floating-card" data-tilt>
+            <div class="timeline-meta">
+              <span class="timeline-badge sprint">Engineering Sprint</span>
+              <span class="timeline-period">Intensive Sprint</span>
+            </div>
+            <h3 class="timeline-role">Circuit Sprint</h3>
+            <h4 class="timeline-company">Hardware and engineering sprint experience</h4>
+            <p class="timeline-desc">
+              Engaged in rapid circuit prototyping, schematic synthesis, and collaborative hardware debugging under tight project timeframes, sharpening quick problem-solving and rapid assembly capabilities.
+            </p>
+            <div class="timeline-skills">
+              <span class="t-tag">Rapid Circuit Prototyping</span>
+              <span class="t-tag">Iterative Debugging</span>
+              <span class="t-tag">Agile Hardware Sprints</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3: Palindronics -->
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-node">
+            <div class="node-ring"></div>
+            <div class="node-core">🏸</div>
+          </div>
+          <div class="timeline-card floating-card" data-tilt>
+            <div class="timeline-meta">
+              <span class="timeline-badge technical">Technical Application</span>
+              <span class="timeline-period">Electronics Practice</span>
+            </div>
+            <h3 class="timeline-role">Palindronics</h3>
+            <h4 class="timeline-company">Electronics and technical application</h4>
+            <p class="timeline-desc">
+              Practical application of electronic principles, component interfacing, sensor readings, and hardware troubleshooting to resolve real-world technical challenges.
+            </p>
+            <div class="timeline-skills">
+              <span class="t-tag">Applied Electronics</span>
+              <span class="t-tag">Component Testing</span>
+              <span class="t-tag">Hardware Diagnostics</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 💌 CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <!-- Frieren's Magic Circle faintly glowing in the background -->
+      <div class="contact-magic-circle-bg">
+        <img src="assets/magic-circle.svg" alt="Frieren Magic Circle" class="magic-circle-img">
+      </div>
+
+      <div class="contact-container floating-card" data-tilt>
+        <div class="contact-header">
+          <div class="section-badge">
+            <span class="badge-rune">✦</span> SUMMON A CONNECTION <span class="badge-rune">✦</span>
+          </div>
+          <h2 class="contact-heading">Let's connect and cast some creative spells together</h2>
+          <p class="contact-tagline">
+            Whether for computer engineering hardware solutions, software collaborations, or precise data encoding, my inbox and frequency are open.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Details Cards -->
+          <div class="contact-direct-links">
+            <!-- Phone -->
+            <div class="contact-method-card">
+              <div class="method-icon-box">📞</div>
+              <div class="method-details">
+                <span class="method-label">Phone</span>
+                <a href="tel:09617087048" class="method-value">09617087048</a>
+              </div>
+              <button class="copy-small-btn" data-copy="09617087048" title="Copy Phone Number">
+                <span>Copy</span>
+              </button>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-method-card">
+              <div class="method-icon-box">✉️</div>
+              <div class="method-details">
+                <span class="method-label">Email</span>
+                <a href="mailto:patulotcheneelou@gmail.com" class="method-value">patulotcheneelou@gmail.com</a>
+              </div>
+              <button class="copy-small-btn" data-copy="patulotcheneelou@gmail.com" title="Copy Email Address">
+                <span>Copy</span>
+              </button>
+            </div>
+
+            <!-- GitHub -->
+            <div class="contact-method-card">
+              <div class="method-icon-box">💻</div>
+              <div class="method-details">
+                <span class="method-label">GitHub</span>
+                <a href="https://github.com/cheen-18" target="_blank" rel="noopener noreferrer" class="method-value">
+                  github.com/cheen-18 <span class="ext-icon">↗</span>
+                </a>
+              </div>
+              <a href="https://github.com/cheen-18" target="_blank" rel="noopener noreferrer" class="link-arrow-btn">
+                <span>Visit</span>
+              </a>
+            </div>
+
+            <!-- Facebook -->
+            <div class="contact-method-card">
+              <div class="method-icon-box">🌐</div>
+              <div class="method-details">
+                <span class="method-label">Facebook</span>
+                <a href="https://www.facebook.com/share/1C8RJpDVYc/" target="_blank" rel="noopener noreferrer" class="method-value">
+                  Cheeneelou's Profile <span class="ext-icon">↗</span>
+                </a>
+              </div>
+              <a href="https://www.facebook.com/share/1C8RJpDVYc/" target="_blank" rel="noopener noreferrer" class="link-arrow-btn">
+                <span>Visit</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Spell Message Form -->
+          <div class="contact-form-wrapper">
+            <form id="contactForm" class="contact-spell-form" onsubmit="handleFormSubmit(event)">
+              <h3 class="form-title">✦ Send a Spell / Message</h3>
+              <div class="form-group">
+                <label for="senderName" class="form-label">Your Name / Title</label>
+                <input type="text" id="senderName" class="form-input" placeholder="e.g. Fern or Stark" required>
+              </div>
+              <div class="form-group">
+                <label for="senderEmail" class="form-label">Your Email / Frequency</label>
+                <input type="email" id="senderEmail" class="form-input" placeholder="name@domain.com" required>
+              </div>
+              <div class="form-group">
+                <label for="senderMessage" class="form-label">Message / Spell Incantation</label>
+                <textarea id="senderMessage" class="form-textarea" rows="4" placeholder="Let's build circuits, optimize data, or rally together..." required></textarea>
+              </div>
+              <button type="submit" class="pill-btn pill-btn-primary form-submit-btn">
+                <span class="btn-glow"></span>
+                <span>✨ Cast Message Spell</span>
+              </button>
+              <div id="formStatus" class="form-status-msg" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Footer signature -->
+        <div class="contact-footer-note">
+          <p>© 2026 Cheeneelou Nicolas Patulot ✦ Anti-Gravity Elf Portfolio</p>
+          <p class="sub-credit">Crafted with Frieren's ethereal pastel purples, glowing gold mana, and zero-G sport agility.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PROJECT BLUEPRINT MODAL -->
+  <div id="projectModal" class="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop" onclick="closeProjectModal()"></div>
+    <div class="modal-dialog floating-card">
+      <button class="modal-close-btn" onclick="closeProjectModal()" aria-label="Close dialog">✕</button>
+      <div class="modal-content" id="modalDynamicContent">
+        <!-- Dynamic content injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ✦ FLOATING LOWER-RIGHT ANIME CHARACTER (NO BACKGROUND, NO FRAME) ✦ -->
+  <aside class="floating-lower-right-anime" id="floatingAnimeCharacter" title="Anti-Gravity Elf Mage (Click for Zero-G Mana Surge!)" role="complementary" aria-label="Anti-Gravity Elf Mage floating at lower right">
+    <img src="assets/anime-character-pure.svg?v=3" 
+         onerror="this.onerror=null; this.src='assets/frieren-badminton-staff.svg?v=3';"
+         alt="Anti-Gravity Anime Character" 
+         class="floating-character-silhouette">
+  </aside>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+  <!-- SCRIPTS -->
+  <script src="script.js"></script>
+</body>
+</html>

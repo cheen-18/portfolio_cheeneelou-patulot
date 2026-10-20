@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100%" height="100%">
+  <defs>
+    <radialGradient id="shuttleAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c4b5fd" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldCap" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Aura -->
+  <circle cx="50" cy="60" r="48" fill="url(#shuttleAura)"/>
+
+  <!-- Feathers Skirt -->
+  <g stroke="#c4b5fd" stroke-width="1.2">
+    <!-- Outer Skirt Body -->
+    <path d="M 28,78 L 12,18 L 88,18 L 72,78 Z" fill="#ffffff" fill-opacity="0.9" stroke="#ddd6fe"/>
+    
+    <!-- Feather ribs -->
+    <line x1="22" y1="18" x2="35" y2="76" stroke="#c4b5fd"/>
+    <line x1="36" y1="18" x2="42" y2="77" stroke="#c4b5fd"/>
+    <line x1="50" y1="18" x2="50" y2="78" stroke="#a78bfa" stroke-width="1.5"/>
+    <line x1="64" y1="18" x2="58" y2="77" stroke="#c4b5fd"/>
+    <line x1="78" y1="18" x2="65" y2="76" stroke="#c4b5fd"/>
+
+    <!-- Tie strings -->
+    <path d="M 18,36 Q 50,42 82,36" fill="none" stroke="#fbbf24" stroke-width="1.8"/>
+    <path d="M 23,54 Q 50,59 77,54" fill="none" stroke="#8b5cf6" stroke-width="1.5"/>
+  </g>
+
+  <!-- Cork Base -->
+  <path d="M 28,76 C 28,102 72,102 72,76 Z" fill="#fffbeb" stroke="#fde047" stroke-width="1.5"/>
+  <!-- Gold trim band -->
+  <rect x="28" y="74" width="44" height="6" fill="url(#goldCap)" rx="1.5"/>
+</svg>

@@ -1,0 +1,328 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="60 -90 700 880" width="100%" height="100%" overflow="visible">
+  <defs>
+    <!-- Gradients -->
+    <radialGradient id="auraGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c4b5fd" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#6d28d9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="tennisGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bef264" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#a3e635" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#65a30d" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4d7c0f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="tennisOrbGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#ecfccb" stop-opacity="0.9"/>
+      <stop offset="30%" stop-color="#a3e635" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#84cc16" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#4d7c0f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="45%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="racketGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#fef08a"/>
+      <stop offset="70%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#ede9fe"/>
+      <stop offset="85%" stop-color="#c4b5fd"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff5eb"/>
+      <stop offset="100%" stop-color="#fed7aa"/>
+    </linearGradient>
+    <linearGradient id="capeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="robeUnder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="magicBloom" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14" result="blur1"/>
+      <feGaussianBlur stdDeviation="5" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Ambient Aura (Removed for pure transparent character) -->
+
+  <!-- Orbiting Tennis Orb Behind Character -->
+  <g transform="translate(180, 240)">
+    <circle cx="0" cy="0" r="45" fill="url(#tennisOrbGlow)" filter="url(#intenseGlow)"/>
+    <circle cx="0" cy="0" r="22" fill="#a3e635"/>
+    <circle cx="-5" cy="-5" r="18" fill="#bef264" opacity="0.8"/>
+    <!-- Seams -->
+    <path d="M -15,-15 Q 0,0 -15,15" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.85"/>
+    <path d="M 15,-15 Q 0,0 15,15" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.85"/>
+    <!-- Mana trails -->
+    <circle cx="-25" cy="15" r="4" fill="#a3e635" opacity="0.7"/>
+    <circle cx="-38" cy="28" r="2.5" fill="#c4b5fd" opacity="0.8"/>
+  </g>
+
+  <!-- Floating Shuttlecock Top Right -->
+  <g transform="translate(620, 220) rotate(-25)">
+    <!-- Feather Skirt -->
+    <path d="M -20,25 L -35,-45 L 35,-45 L 20,25 Z" fill="#ffffff" opacity="0.85" stroke="#ddd6fe" stroke-width="1.5"/>
+    <!-- Feather vanes -->
+    <line x1="-28" y1="-45" x2="-14" y2="20" stroke="#c4b5fd" stroke-width="1.2"/>
+    <line x1="-15" y1="-45" x2="-7" y2="22" stroke="#c4b5fd" stroke-width="1.2"/>
+    <line x1="0" y1="-45" x2="0" y2="24" stroke="#c4b5fd" stroke-width="1.2"/>
+    <line x1="15" y1="-45" x2="7" y2="22" stroke="#c4b5fd" stroke-width="1.2"/>
+    <line x1="28" y1="-45" x2="14" y2="20" stroke="#c4b5fd" stroke-width="1.2"/>
+    <!-- Skirt Ties / String -->
+    <ellipse cx="0" cy="-15" rx="26" ry="6" fill="none" stroke="#fbbf24" stroke-width="2"/>
+    <ellipse cx="0" cy="5" rx="21" ry="5" fill="none" stroke="#8b5cf6" stroke-width="1.5"/>
+    <!-- Cork Base -->
+    <path d="M -18,22 C -18,42 18,42 18,22 Z" fill="#fffbeb" stroke="#fef08a" stroke-width="1.5"/>
+    <!-- Gold Band on Cork -->
+    <rect x="-18" y="20" width="36" height="5" fill="url(#goldGrad)" rx="2"/>
+    <!-- Aura glow -->
+    <circle cx="0" cy="0" r="55" fill="url(#auraGlow)" opacity="0.6"/>
+  </g>
+
+  <!-- FRIEREN: BACK HAIR (Long White/Violet Twintails swaying in zero gravity) -->
+  <g id="back-hair">
+    <!-- Left Twintail flowing up and out -->
+    <path d="M 330,360 C 270,370 200,420 160,490 C 130,550 140,650 180,720 C 195,660 210,590 250,520 C 280,470 310,430 335,395 Z" fill="url(#hairGrad)" opacity="0.95"/>
+    <path d="M 320,380 C 260,410 200,480 180,560 C 170,620 180,680 195,730 C 185,670 195,600 230,530 C 260,470 290,420 320,380 Z" fill="#ddd6fe" opacity="0.6"/>
+    <!-- Right Twintail floating weightlessly -->
+    <path d="M 470,360 C 530,370 600,420 640,490 C 670,550 660,650 620,720 C 605,660 590,590 550,520 C 520,470 490,430 465,395 Z" fill="url(#hairGrad)" opacity="0.95"/>
+    <path d="M 480,380 C 540,410 600,480 620,560 C 630,620 620,680 605,730 C 615,670 605,600 570,530 C 540,470 510,420 480,380 Z" fill="#ddd6fe" opacity="0.6"/>
+  </g>
+
+  <!-- FRIEREN: BODY & CLOTHING -->
+  <g id="body">
+    <!-- Black Under-Robe / Dress -->
+    <path d="M 340,460 L 460,460 L 485,740 L 315,740 Z" fill="url(#robeUnder)"/>
+    <line x1="400" y1="460" x2="400" y2="740" stroke="#fbbf24" stroke-width="2" stroke-dasharray="10 5"/>
+
+    <!-- Gold Waist Belt / Clasps -->
+    <rect x="345" y="525" width="110" height="12" rx="4" fill="url(#goldGrad)" stroke="#fef08a" stroke-width="1"/>
+    <circle cx="400" cy="531" r="10" fill="#f59e0b" stroke="#ffffff" stroke-width="1.5"/>
+
+    <!-- Frieren's Signature White Capelet / Shawl -->
+    <path d="M 340,410 C 310,450 300,530 330,560 C 370,575 430,575 470,560 C 500,530 490,450 460,410 C 435,420 365,420 340,410 Z" fill="url(#capeGrad)" stroke="#cbd5e1" stroke-width="1.5"/>
+
+    <!-- Capelet Gold Trim & Black Stripes -->
+    <path d="M 325,540 C 360,565 440,565 475,540" fill="none" stroke="url(#goldGrad)" stroke-width="6"/>
+    <path d="M 330,528 C 365,550 435,550 470,528" fill="none" stroke="#1e1b4b" stroke-width="4"/>
+    
+    <!-- White High Collar -->
+    <path d="M 370,390 L 430,390 L 438,425 L 362,425 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+    <path d="M 362,425 L 400,445 L 438,425" fill="#f8fafc" stroke="#fbbf24" stroke-width="2"/>
+    <!-- Gold Collar Jewel / Brooch -->
+    <polygon points="400,432 408,443 400,454 392,443" fill="#ef4444" stroke="#fbbf24" stroke-width="1.8"/>
+  </g>
+
+  <!-- FRIEREN: HEAD, FACE & ELVEN EARS -->
+  <g id="head">
+    <!-- Elven Ears (Long, pointed) -->
+    <!-- Left Ear -->
+    <path d="M 345,335 C 310,330 260,310 240,295 C 265,325 310,350 345,360 Z" fill="url(#skinGrad)" stroke="#fbcfe8" stroke-width="1"/>
+    <!-- Left Earring: Gold cap + Red teardrop gem -->
+    <circle cx="280" cy="335" r="4" fill="url(#goldGrad)"/>
+    <path d="M 280,339 C 276,346 274,354 280,362 C 286,354 284,346 280,339 Z" fill="#ef4444" stroke="#b91c1c" stroke-width="1"/>
+
+    <!-- Right Ear -->
+    <path d="M 455,335 C 490,330 540,310 560,295 C 535,325 490,350 455,360 Z" fill="url(#skinGrad)" stroke="#fbcfe8" stroke-width="1"/>
+    <!-- Right Earring -->
+    <circle cx="520" cy="335" r="4" fill="url(#goldGrad)"/>
+    <path d="M 520,339 C 516,346 514,354 520,362 C 526,354 524,346 520,339 Z" fill="#ef4444" stroke="#b91c1c" stroke-width="1"/>
+
+    <!-- Face Shape -->
+    <path d="M 345,320 C 345,260 455,260 455,320 C 455,370 425,405 400,412 C 375,405 345,370 345,320 Z" fill="url(#skinGrad)"/>
+
+    <!-- Eyes (Frieren's signature emerald green calm elven eyes) -->
+    <!-- Left Eye -->
+    <g transform="translate(366, 332)">
+      <path d="M -16,0 Q 0,-7 16,0" stroke="#475569" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="0" cy="3" rx="9" ry="11" fill="#059669"/>
+      <ellipse cx="0" cy="4" rx="7" ry="8" fill="#10b981"/>
+      <circle cx="-3" cy="1" r="3" fill="#ffffff"/>
+      <circle cx="3" cy="6" r="1.5" fill="#a7f3d0"/>
+      <!-- Soft subtle lower eyelash -->
+      <path d="M -8,14 Q 0,16 8,14" stroke="#94a3b8" stroke-width="1.2" fill="none"/>
+    </g>
+
+    <!-- Right Eye -->
+    <g transform="translate(434, 332)">
+      <path d="M -16,0 Q 0,-7 16,0" stroke="#475569" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <ellipse cx="0" cy="3" rx="9" ry="11" fill="#059669"/>
+      <ellipse cx="0" cy="4" rx="7" ry="8" fill="#10b981"/>
+      <circle cx="-3" cy="1" r="3" fill="#ffffff"/>
+      <circle cx="3" cy="6" r="1.5" fill="#a7f3d0"/>
+      <path d="M -8,14 Q 0,16 8,14" stroke="#94a3b8" stroke-width="1.2" fill="none"/>
+    </g>
+
+    <!-- Soft blush -->
+    <ellipse cx="355" cy="345" rx="8" ry="4" fill="#fda4af" opacity="0.35"/>
+    <ellipse cx="445" cy="345" rx="8" ry="4" fill="#fda4af" opacity="0.35"/>
+
+    <!-- Nose & Mouth (dainty elven calm smile) -->
+    <path d="M 400,348 L 398,355 L 402,356" stroke="#f472b6" stroke-width="1.2" fill="none"/>
+    <path d="M 394,372 Q 400,375 406,372" stroke="#e11d48" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+    <!-- Bangs & Front Hair -->
+    <path d="M 345,300 C 355,330 365,340 372,350 C 375,330 380,310 385,290 C 390,325 395,352 400,360 C 405,340 410,310 415,290 C 420,325 428,345 435,350 C 440,335 448,320 455,300 C 470,260 330,260 345,300 Z" fill="url(#hairGrad)"/>
+    <!-- Top Hair strands -->
+    <path d="M 400,245 C 360,245 335,275 335,320 C 335,360 350,375 350,375 C 340,350 342,305 365,275 C 385,250 400,245 400,245 Z" fill="#ffffff"/>
+    <path d="M 400,245 C 440,245 465,275 465,320 C 465,360 450,375 450,375 C 460,350 458,305 435,275 C 415,250 400,245 400,245 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- Left Arm channeling mana -->
+  <g transform="translate(315, 435)">
+    <!-- Sleeve -->
+    <path d="M 25,0 C -5,30 -20,70 -35,100 C -25,105 5,75 35,35 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+    <path d="M -35,100 L -30,110 L -18,105" stroke="url(#goldGrad)" stroke-width="3" fill="none"/>
+    <!-- Hand with open palm levitating mana -->
+    <path d="M -35,105 C -45,115 -48,125 -42,132 C -38,135 -30,132 -25,122 L -18,105 Z" fill="url(#skinGrad)"/>
+    <!-- Floating mini mana glyph under left hand -->
+    <circle cx="-45" cy="145" r="14" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="4 2"/>
+    <polygon points="-45,135 -40,145 -45,155 -50,145" fill="none" stroke="#fbbf24" stroke-width="1"/>
+  </g>
+
+  <!-- MAGICAL STAFF WITH GLOWING BADMINTON RACKET HEAD -->
+  <!-- Held firmly by right hand, angled heroically -->
+  <g id="magical-badminton-staff">
+    <!-- Staff Rod (Long mystical wooden/golden rod wrapped in elven ribbons) -->
+    <line x1="440" y1="580" x2="560" y2="170" stroke="#78350f" stroke-width="9" stroke-linecap="round"/>
+    <line x1="440" y1="580" x2="560" y2="170" stroke="url(#goldGrad)" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Flowing Lavender Staff Ribbon -->
+    <path d="M 450,550 Q 480,530 460,500 T 490,430 T 510,340 T 545,240" fill="none" stroke="#c4b5fd" stroke-width="3.5" opacity="0.85"/>
+
+    <!-- Right Hand holding the staff -->
+    <g transform="translate(460, 470)">
+      <ellipse cx="0" cy="0" rx="14" ry="10" fill="url(#skinGrad)" transform="rotate(-30)"/>
+      <!-- Fingers gripping -->
+      <path d="M -8,-6 C -6,-12 8,-12 10,-4" stroke="#fed7aa" stroke-width="3" fill="none"/>
+      <!-- Sleeve -->
+      <path d="M 5,-25 L -15,-10 L 0,8 L 18,-5 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2"/>
+      <path d="M -15,-10 L -12,-5" stroke="url(#goldGrad)" stroke-width="3"/>
+    </g>
+
+    <!-- Staff Head Junction: Ornate Elven Wings & Gold Mount -->
+    <g transform="translate(565, 155) rotate(22)">
+      <!-- Gold Connector Collar -->
+      <rect x="-14" y="0" width="28" height="18" rx="4" fill="url(#goldGrad)" stroke="#fef08a" stroke-width="1.5"/>
+      <circle cx="0" cy="9" r="5" fill="#ef4444" stroke="#fef08a" stroke-width="1"/>
+
+      <!-- Elven Wing Accents flanking racket -->
+      <path d="M -14,5 C -45,0 -70,-30 -80,-70 C -65,-50 -40,-35 -14,-15 Z" fill="#ffffff" stroke="url(#goldGrad)" stroke-width="2" filter="url(#magicBloom)"/>
+      <path d="M 14,5 C 45,0 70,-30 80,-70 C 65,-50 40,-35 14,-15 Z" fill="#ffffff" stroke="url(#goldGrad)" stroke-width="2" filter="url(#magicBloom)"/>
+
+      <!-- BADMINTON RACKET FRAME (Glowing Gold & Ethereal Violet) -->
+      <!-- Outer Racket Rim Glow -->
+      <ellipse cx="0" cy="-90" rx="65" ry="85" fill="none" stroke="url(#racketGlow)" stroke-width="7" filter="url(#intenseGlow)"/>
+      <!-- Inner Frame Accent -->
+      <ellipse cx="0" cy="-90" rx="60" ry="80" fill="none" stroke="#ffffff" stroke-width="2"/>
+      <!-- Deep Inner Translucent Field -->
+      <ellipse cx="0" cy="-90" rx="58" ry="78" fill="url(#auraGlow)" opacity="0.45"/>
+
+      <!-- BADMINTON RACKET STRINGS (Glowing Mana Cross-Grid) -->
+      <g stroke="#fef08a" stroke-width="1.2" opacity="0.85">
+        <!-- Vertical Strings -->
+        <line x1="-45" y1="-90" x2="-45" y2="-90"/>
+        <line x1="-36" y1="-150" x2="-36" y2="-30"/>
+        <line x1="-24" y1="-163" x2="-24" y2="-17"/>
+        <line x1="-12" y1="-170" x2="-12" y2="-10"/>
+        <line x1="0" y1="-173" x2="0" y2="-7"/>
+        <line x1="12" y1="-170" x2="12" y2="-10"/>
+        <line x1="24" y1="-163" x2="24" y2="-17"/>
+        <line x1="36" y1="-150" x2="36" y2="-30"/>
+
+        <!-- Horizontal Strings -->
+        <line x1="-38" y1="-150" x2="38" y2="-150"/>
+        <line x1="-48" y1="-135" x2="48" y2="-135"/>
+        <line x1="-54" y1="-120" x2="54" y2="-120"/>
+        <line x1="-58" y1="-105" x2="58" y2="-105"/>
+        <line x1="-60" y1="-90" x2="60" y2="-90"/>
+        <line x1="-58" y1="-75" x2="58" y2="-75"/>
+        <line x1="-54" y1="-60" x2="54" y2="-60"/>
+        <line x1="-48" y1="-45" x2="48" y2="-45"/>
+        <line x1="-38" y1="-30" x2="38" y2="-30"/>
+      </g>
+
+      <!-- Center Racket Mana Core (Frieren's staff ruby jewel at the crown) -->
+      <circle cx="0" cy="-176" r="8" fill="#ef4444" stroke="#fef08a" stroke-width="2" filter="url(#magicBloom)"/>
+      <polygon points="0,-190 6,-180 -6,-180" fill="#fbbf24"/>
+    </g>
+  </g>
+
+  <!-- FOREGROUND FLOATING ELEMENTS (ANTI-GRAVITY SPORT ORBS) -->
+  <!-- Glowing Green Tennis Ball 1 (Front Left, orbiting) -->
+  <g transform="translate(250, 480)">
+    <circle cx="0" cy="0" r="50" fill="url(#tennisOrbGlow)" filter="url(#intenseGlow)"/>
+    <circle cx="0" cy="0" r="26" fill="#a3e635"/>
+    <circle cx="-6" cy="-6" r="22" fill="#bef264" opacity="0.8"/>
+    <!-- Classic Tennis Seam Curvature -->
+    <path d="M -18,-18 Q 0,0 -18,18" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.9"/>
+    <path d="M 18,-18 Q 0,0 18,18" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.9"/>
+    <!-- Sparkles -->
+    <polygon points="25,-15 28,-7 36,-10 30,-3 33,5 25,0 20,6 21,-2 14,-7 22,-8" fill="#fef08a"/>
+  </g>
+
+  <!-- Glowing Green Tennis Ball 2 (Near Racket, mid-air serve) -->
+  <g transform="translate(680, 140)">
+    <circle cx="0" cy="0" r="40" fill="url(#tennisOrbGlow)" filter="url(#intenseGlow)"/>
+    <circle cx="0" cy="0" r="20" fill="#a3e635"/>
+    <circle cx="-4" cy="-4" r="16" fill="#bef264" opacity="0.85"/>
+    <path d="M -14,-14 Q 0,0 -14,14" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.9"/>
+    <path d="M 14,-14 Q 0,0 14,14" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.9"/>
+  </g>
+
+  <!-- Levitating Weightless Shuttlecock (Front Bottom Left) -->
+  <g transform="translate(240, 680) rotate(35)">
+    <path d="M -22,25 L -38,-45 L 38,-45 L 22,25 Z" fill="#ffffff" opacity="0.92" stroke="#c4b5fd" stroke-width="1.8"/>
+    <line x1="-30" y1="-45" x2="-15" y2="22" stroke="#a78bfa" stroke-width="1.5"/>
+    <line x1="-15" y1="-45" x2="-7" y2="24" stroke="#a78bfa" stroke-width="1.5"/>
+    <line x1="0" y1="-45" x2="0" y2="25" stroke="#a78bfa" stroke-width="1.5"/>
+    <line x1="15" y1="-45" x2="7" y2="24" stroke="#a78bfa" stroke-width="1.5"/>
+    <line x1="30" y1="-45" x2="15" y2="22" stroke="#a78bfa" stroke-width="1.5"/>
+    <!-- Band -->
+    <ellipse cx="0" cy="-15" rx="28" ry="6" fill="none" stroke="#f59e0b" stroke-width="2"/>
+    <path d="M -19,23 C -19,45 19,45 19,23 Z" fill="#fffbeb" stroke="#fef08a" stroke-width="1.5"/>
+    <rect x="-19" y="22" width="38" height="6" fill="url(#goldGrad)" rx="2"/>
+    <circle cx="0" cy="0" r="60" fill="url(#auraGlow)" opacity="0.5"/>
+  </g>
+
+  <!-- Levitating Weightless Shuttlecock 2 (Floating mid right) -->
+  <g transform="translate(560, 640) rotate(-40)">
+    <path d="M -18,20 L -30,-38 L 30,-38 L 18,20 Z" fill="#ffffff" opacity="0.9" stroke="#c4b5fd" stroke-width="1.5"/>
+    <ellipse cx="0" cy="-12" rx="22" ry="5" fill="none" stroke="#f59e0b" stroke-width="1.8"/>
+    <path d="M -15,18 C -15,38 15,38 15,18 Z" fill="#fffbeb" stroke="#fef08a" stroke-width="1.2"/>
+    <rect x="-15" y="18" width="30" height="5" fill="url(#goldGrad)" rx="1.5"/>
+  </g>
+
+  <!-- Sparkles & Mana Runes in air -->
+  <g fill="#fef08a" opacity="0.85">
+    <path d="M 400,120 L 403,130 L 413,133 L 403,136 L 400,146 L 397,136 L 387,133 L 397,130 Z"/>
+    <path d="M 280,210 L 282,217 L 289,219 L 282,221 L 280,228 L 278,221 L 271,219 L 278,217 Z"/>
+    <path d="M 520,290 L 522,298 L 530,300 L 522,302 L 520,310 L 518,302 L 510,300 L 518,298 Z"/>
+    <path d="M 330,620 L 332,626 L 338,628 L 332,630 L 330,636 L 328,630 L 322,628 L 328,626 Z"/>
+  </g>
+</svg>
